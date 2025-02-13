@@ -1,12 +1,10 @@
 package main
 
-import "fmt"
-
 func main() {
-	results := twoSum([]int{2, 7, 11, 15}, 9)
-	fmt.Println(results)
+	// ----- ONLY HERE FOR TESTING ----- \\
 }
 
+// ========== THE OLUTION FUNCTION ========== \\
 func twoSum(nums []int, target int) []int {
 	indexes := []int{}
 	for index1, value1 := range nums {
