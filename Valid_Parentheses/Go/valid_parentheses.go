@@ -1,23 +1,32 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Println(isValid("([])"))
+	// ----- ONLY HERE FOR TESTING ----- \\
 }
 
+// ========== THE OLUTION FUNCTION ========== \\
 func isValid(s string) bool {
-	symbols := map[string]string{
-		"(": ")",
-		"{": "}",
-		"[": "]",
+	symbols := map[rune]rune{
+		'(': ')',
+		'{': '}',
+		'[': ']',
 	}
-	slot := string(s[0])
 
-	for index1, value1 := range s[1:] {
-		for index2, value2 := range slot {
-			if value
+	stack := []rune{} // Stack to store opening brackets
+
+	for _, char := range s {
+
+		if closing, exists := symbols[char]; exists {
+			stack = append(stack, closing)
+		} else {
+
+			if len(stack) == 0 || stack[len(stack)-1] != char {
+				return false
+			}
+			// Pop from stack
+			stack = stack[:len(stack)-1]
 		}
 	}
 
+	return len(stack) == 0
 }
