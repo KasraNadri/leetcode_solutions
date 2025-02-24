@@ -4,7 +4,7 @@ func main() {
 	// ----- ONLY HERE FOR TESTING ----- \\
 }
 
-// ========== THE OLUTION FUNCTION ========== \\
+// ========== THE SOLUTION FUNCTION ========== \\
 func isValid(s string) bool {
 	symbols := map[rune]rune{
 		'(': ')',
