@@ -4,7 +4,7 @@ func main() {
 	// ----- ONLY HERE FOR TESTING ----- \\
 }
 
-// ========== THE OLUTION FUNCTION ========== \\
+// ========== THE SOLUTION FUNCTION ========== \\
 func twoSum(nums []int, target int) []int {
 	indexes := []int{}
 	for index1, value1 := range nums {

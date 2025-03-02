@@ -4,6 +4,7 @@ func main() {
 	//----- ONLY HERE FOR TESTING -----\\
 }
 
+// ========== THE SOLUTION FUNCTION ========== \\
 func longestCommonPrefix(strs []string) string {
 
 	// ===== FINDS THE SHORTEST STRING IN THE LIST ===== \\
