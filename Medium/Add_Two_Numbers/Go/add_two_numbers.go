@@ -1,34 +1,20 @@
 package main
 
 import (
-	"fmt"
 	"math/big"
 	"strconv"
 )
-
-func main() {
-	a, b := 123, 234
-	fmt.Println("Before reversing: a =", a, "b =", b)
-
-	for x, y := a, b; x > 0 || y > 0; {
-		if x > 0 {
-			a = a*10 + x%10
-			x /= 10
-		}
-		if y > 0 {
-			b = b*10 + y%10
-			y /= 10
-		}
-	}
-
-	fmt.Println("After reversing: a =", a, "b =", b)
-}
 
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
+func main() {
+	//----- ONLY HERE FOR TESTING -----\\
+}
+
+// ========== THE SOLUTION FUNCTION ========== \\
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	dummy := &ListNode{}
 	completeNode := dummy
@@ -77,6 +63,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 }
 
+// ========== HELPER FUNCTION ========== \\
 func reverseString(s string) string {
 	runes := []rune(s) // Convert string to slice of runes
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
