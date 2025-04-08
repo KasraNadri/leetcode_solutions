@@ -1,5 +1,6 @@
 package main
 
+//----- REQUIRED IMPORTS -----\\
 import (
 	"math/big"
 	"strconv"

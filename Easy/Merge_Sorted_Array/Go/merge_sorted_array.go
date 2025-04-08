@@ -1,9 +1,10 @@
 package main
 
 func main() {
-
+	//----- ONLY HERE FOR TESTING -----\\
 }
 
+// ========== THE SOLUTION FUNCTION ========== \\
 func merge(nums1 []int, m int, nums2 []int, n int) {
 	i := 0
 	j := 0
